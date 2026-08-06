@@ -48,6 +48,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+// CI baseline probe: this branch is origin/dev untouched apart from this comment, pushed only
+// to make the `changes` filter schedule paimon-connector-it so PaimonWithS3IT's behaviour on
+// pristine dev can be observed. Not for merge.
 public class PaimonWithS3IT extends SeaTunnelContainer {
 
     private static final String MINIO_DOCKER_IMAGE = "minio/minio:RELEASE.2024-06-13T22-53-53Z";
